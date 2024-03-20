@@ -4,9 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fameve landing page</title>
-    
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
+<body class="bg-pink-200">
+    <div id="navbar" class="h-16 my-2 absolute top-0 bg-white w-full border-b justify-between header menu flex mt-0 px-16 mb-0">
+        <div class="fameveicon flex-1">
+            <img>
+        </div>
+        <div class="menu mt-4 justify-between space-x-6">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Products</a>
+            <a href="#">Contacts</a>
+        </div>
+
+    </div>
+
+    <div class="section1 content grid grid-cols-2 w-full mt-36 mb-36">
+        <div class="col-start-1 ml-12 z-1">
+            <h1 class="font-bold text-4xl">FAMEVE</h1>
+            <p class="text-lg mt-4">Welcome to Fameve, your go-to IT partner for cutting-edge solutions. Specializing in payment integrations, ecommerce development, custom software solutions, and subscription services. We are committed to increase the adoption of digital technologies in SMEs in developing countries by offering innovative solutions to streamline business operations. </p>
+        </div>
+        <div class="col-start-1 ml-12 rounded-md bg-white w-24 row-start-2 flex space-x-2 ">
+            <input class="w-300 p-2 rounded-md " type="email" placeholder="Email Address">
+            <button class="flex space-x-4 rounded-md bg-orange-500 py-2 px-4 w-60 text-white" type="submit">Subscribe<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+              </button>
+        </div>
+        <div class="col-start-2 ml-24 scale-125">
+            <img src="https://www.fameve.com/assets/images/lady_seated.svg">
+        </div>
+
+    </div>
+
     
 </body>
 </html>
