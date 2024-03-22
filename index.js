@@ -6,7 +6,7 @@
 //     if (emailField.value===null){
 //         emailError.innerHTML="Please enter email"
 //     }
-// }
+
 // emailForm.addEventListener("submit",(e)=>{
 //     let messages=[]
 //     if(emailField.value===''){
