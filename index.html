@@ -25,13 +25,20 @@
             <h1 class="font-bold pt-20 text-4xl">FAMEVE</h1>
             <p class="text-lg mt-4">Welcome to Fameve, your go-to IT partner for cutting-edge solutions. Specializing in payment integrations, ecommerce development, custom software solutions, and subscription services. We are committed to increase the adoption of digital technologies in SMEs in developing countries by offering innovative solutions to streamline business operations. </p>
         </div>
-        <div class="col-start-1 ml-12 rounded-md bg-white w-24 row-start-2 flex space-x-2 ">
-            <input class="w-300 p-2 rounded-md " type="email" placeholder="Email Address">
-            <button class="flex space-x-4 rounded-md bg-orange-500 py-2 px-4 w-60 text-white" type="submit">Subscribe<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-              </svg>
-              </button>
+        
+      
+        <div id="emailform" class="col-start-1 ml-12 rounded-md bg-white w-24 row-start-2 flex space-x-2 ">
+          <input id="email" class="w-300 p-2 rounded-md " type="email" placeholder="Email Address">
+          <span id="email-error"></span>
+          <button class="flex space-x-4 rounded-md bg-orange-500 py-2 px-4 w-60 text-white" type="submit">Subscribe<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+            </svg>
+            </button>
         </div>
+          
+
+        
+        
         <div class="col-start-2 ml-24 mt-10 pt-20 scale-125">
             <img src="https://www.fameve.com/assets/images/lady_seated.svg">
         </div>
@@ -62,12 +69,12 @@
     <div class="section3 bg-blue-50 pb-14">
         <h1 class="text-4xl pt-12 text-black text-center">Our products and<br>solutions for you</h1>
         <div class="grid grid cols-2">
-            <div class="flex items-start ml-40 border-b grid col-start-1 row-start-1 w-76">
+            <div class="flex ml-40 border-b grid col-start-1 row-start-1 w-76">
                 
-                <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <div><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z" />
                   </svg>
-                </span>
+                </div>
                 
                   
                 <div>
@@ -128,7 +135,7 @@
 
         </div>
         <div class="text-center w-70 pb-10">
-            <button class="text-sm py-2 rounded-md px-6 mt-12 text-white bg-orange-400 hover:bg-orange-500">See More</button>
+            <a href="#about"><button class="text-sm py-2 rounded-md px-6 mt-12 text-white bg-orange-400 hover:bg-orange-500">See More</button></a>
         </div>
     </div>
     
@@ -173,121 +180,14 @@
         </div>
     </div>
 
-    <div class="section5 bg-blue-50 pb-10">
+    <div class="section5 bg-blue-50 mb-20 pb-10">
         <h1 class="text-center pt-12"> <span class="font-bold text-2xl">Read trusted reviews from our customers<br></span>Check our reviews to discover what clients have to say about our capabilities and results.</h1>
-        <div class="grid grid-cols-3">
-            <div class="flex col-start-1 bg-white rounded-md ml-12 py-10 px-10 mt-8">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                  </svg>
-                  <div class="flex flex-col">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                      </svg>
-                      <span>Paul Mugo</span>
-                      <div>
-                        <p>Our experience with Fameve Pay has been excellent. The platform's flexibility and comprehensive features, including subscription management and recurring billing, have made handling payments a seamless process. The real-time fund deposition ensures that our transactions are swift and reliable. Fameve Pay has become an integral part of our financial operations.</p>
-                    </div>
-                      
-                  </div>
-               
-            </div>
-
-            <div class="flex col-start-1 row-start-2 h-60 bg-white rounded-md ml-12 py-10 px-10 mt-8">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                  </svg>
-                  
-                  <div class="flex flex-col">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
-                      </svg>
-                      
-                      <span>Sila Kipkorir</span>
-                      <div>
-                        <p>As a small business, Mshoppa made e-commerce a breeze. Affordable and user-friendly, it gave our online store the boost it needed!!</p>
-                    </div>
-                      
-                  </div>
-               
-            </div>
-
-            <div class="flex col-start-2 row-start-1 h-60 bg-white rounded-md ml-12 py-10 px-10 mt-8">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                  </svg>
-                  <div class="flex flex-col">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                      </svg>
-                      <span>Amman Karim- CG Visuals</span>
-                      <div>
-                        <p>Fameve Delivery is a lifesaver for our e-commerce business. Efficient order management and real-time tracking keep our customers happy and us stress-free! </p>
-                    </div>
-                      
-                  </div>
-               
-            </div>
-
-            <div class="flex col-start-2 row-start-2 bg-white rounded-md ml-12 py-10 px-10 mt-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                  </svg>
-                  <div class="flex flex-col">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                      </svg>
-                      <span>Nelson Keloi</span>
-                      <div>
-                        <p>Choosing Mshoppa was one of the best decisions for our e-commerce business. It offers a seamless and affordable solution for SMEs like ours. The managed approach has simplified our operations, allowing us to focus more on growing our business. Mshoppa is a true ally for any small or medium-sized enterprise looking to establish a strong digital presence. </p>
-                    </div>
-                      
-                  </div>
-               
-            </div>
-
-            <div class="flex col-start-3 row-start-1 bg-white rounded-md ml-12 py-10 px-10 mt-8">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                  </svg>
-                  <div class="flex flex-col">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                      </svg>
-                      <span>Evans Mwangangi</span>
-                      <div>
-                        <p>Our experience with Fameve Cloud has been phenomenal! The platform's advanced technology has significantly boosted the scalability of our operations. The robust security measures provide a sense of trust, making it an indispensable part of our digital journey. Highly recommended for businesses seeking a reliable and secure cloud solution</p>
-                    </div>
-                      
-                  </div>
-               
-            </div>
-
-            <div class="flex col-start-3 row-start-2 h-60 bg-white rounded-md ml-12 py-10 px-10 mt-8">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                  </svg>
-                  <div class="flex flex-col">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
-                      </svg>
-                      <span>Asif Ahmed</span>
-                      <div>
-                        <p>Deploying websites has never been easier. Fameve Hosting, powered by Fameve Cloud, is our go-to for seamless and hassle-free deployment</p>
-                    </div>
-                      
-                  </div>
-               
-            </div>
-            
-
-            
-            
-            
-        </div>
-
+        <div class="grid grid-cols-3 mb-10"></div>
     </div>
-
+          
+                
+                
+                  
     <div class="section6 contactus bg-blue-800 text-white mt-0 py-20">
         <h1 class="font-bold text-center text-2xl">Contact Us</h1>
         <div class=" grid justify-center mt-4" ><p>Your inquiries are important to us, and our team is ready to provide the<br> support and information you need. Let's start a conversation and<br>explore how we can assist you on your<br>journey to digital success. Your satisfaction is our priority!</p></div>
